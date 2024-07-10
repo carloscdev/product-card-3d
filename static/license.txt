@@ -1,0 +1,11 @@
+Model Information:
+* title:	XBOX Controller (Black) - Microsoft Paint 3D
+* source:	https://sketchfab.com/3d-models/xbox-controller-black-microsoft-paint-3d-52fea6f74a604e1daae186e89bb69a94
+* author:	Nebula Games (https://sketchfab.com/NebulaGamesCreations)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "XBOX Controller (Black) - Microsoft Paint 3D" (https://sketchfab.com/3d-models/xbox-controller-black-microsoft-paint-3d-52fea6f74a604e1daae186e89bb69a94) by Nebula Games (https://sketchfab.com/NebulaGamesCreations) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
