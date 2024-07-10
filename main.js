@@ -29,7 +29,7 @@ controls.update();
 
 const loadModel = () => {
   const gltfLoader = new GLTFLoader();
-  gltfLoader.load('./static/scene.gltf', (gltf) => {
+  gltfLoader.load('./assets/scene.gltf', (gltf) => {
     const model = gltf.scene;
         // Escalar el modelo
         const scaleFactor = 500; // Ajusta este valor según sea necesario
