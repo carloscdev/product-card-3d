@@ -17,66 +17,62 @@
   <title>XBOX Controller - Three JS</title>
   <style>
     .bg-dots {
-      background-color: #232323; /* Fondo negro */
+      background-color: #232323;
       background-image: radial-gradient(#292929 1px, transparent 1px);
-      background-size: 10px 10px; /* Ajusta el tamaño de los puntos */
+      background-size: 10px 10px;
     }
-    .bg-dots-secondary {
-      background-color: #188018; /* Fondo negro */
+    .bg-dots-green {
+      background-color: #188018;
       background-image: radial-gradient(#198619 1px, transparent 1px);
-      background-size: 10px 10px; /* Ajusta el tamaño de los puntos */
-    }
-    @media screen and (max-width: 820px) {
-      section { transform: scale(0.5); }
-    }
-    .marquee-container {
-      width: 100%; /* Ancho del contenedor */
-      overflow: hidden; /* Oculta el texto que se desborda */
-      white-space: nowrap; /* Impide que el texto haga saltos de línea */
+      background-size: 10px 10px;
     }
     .marquee-to-left {
       display: inline-block;
-      padding-left: 100%; /* Empieza el texto fuera de la vista */
-      animation: marquee-left 5s linear infinite; /* Animación */
+      padding-left: 100%;
+      animation: marquee-left 15s linear infinite;
     }
     @keyframes marquee-left {
-      0% { transform: translateX(0%); /* Empieza en su posición inicial */ }
-      100% { transform: translateX(-100%); /* Se desplaza fuera de la vista */ }
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
     }
     .marquee-to-right {
       display: inline-block;
-      padding-left: 100%; /* Empieza el texto fuera de la vista */
-      animation: marquee-right 5s linear infinite; /* Animación */
+      padding-left: 100%;
+      animation: marquee-right 15s linear infinite;
     }
     @keyframes marquee-right {
-      0% { transform: translateX(-100%); /* Empieza en su posición inicial */ }
-      100% { transform: translateX(0%); /* Se desplaza fuera de la vista */ }
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0%); }
     }
   </style>
 </head>
 
 <body class="h-screen w-screen">
-  <main class="h-full flex items-center justify-center">
-    <section class="w-[800px] h-[480px] grid grid-cols-5 grid-rows-1">
-      <div class="marquee-container col-start-1 col-end-4 mr-24 bg-dots-secondary shadow-xl rounded-3xl row-start-1 row-end-1 shadow-xl relative z-0">
+  <main class="h-full flex items-center justify-center mx-4 md:mx-0">
+    <section class="w-full h-[650px] md:w-[800px] md:h-[480px] grid grid-cols-1 grid-rows-5 md:grid-cols-5 md:grid-rows-1">
+      <div
+        class="w-full overflow-hidden whitespace-nowrap row-start-1 row-end-4 col-start-1 col-end-2 md:col-start-1
+        md:col-end-4 md:row-start-1 md:row-end-2 mr-24 bg-dots-green shadow-xl rounded-3xl shadow-xl relative z-0">
         <p class="marquee-to-left font-extrabold text-[200px] text-white opacity-10 absolute -top-16 left-0 leading-[110px]">
-          XBOX
+          XBOX XBOX XBOX XBOX XBOX
         </p>
         <p class="marquee-to-right font-extrabold text-[200px] text-white opacity-10 absolute top-[100px] left-0 leading-[110px]">
-          XBOX
+          XBOX XBOX XBOX XBOX XBOX
         </p>
         <p class="marquee-to-left font-extrabold text-[200px] text-white opacity-10 absolute top-[265px] left-0 leading-[110px]">
-          XBOX
+          XBOX XBOX XBOX XBOX XBOX
         </p>
         <p class="marquee-to-right font-extrabold text-[200px] text-white opacity-10 absolute top-[430px] left-0 leading-[110px]">
-          XBOX
+          XBOX XBOX XBOX XBOX XBOX
         </p>
       </div>
-      <div class="ml-12 col-start-2 col-end-6 bg-dots rounded-3xl row-start-1 row-end-1 my-12 text-white relative z-10 overflow-hidden">
-        <img src="./assets/xbox.png" alt="XBOX Controller" class="ease-in duration-100 absolute top-[60px] -right-[90px] opacity-10 w-[550px]">
-        <div class="h-full py-12 pl-40 flex flex-col gap-5 justify-between z-index relative z-20 w-full">
+      <div
+        class="mx-4 md:mx-0 md:ml-12 row-start-2 row-end-6 col-start-1 col-end-2 md:col-start-2 md:col-end-6 md:row-start-1 md:row-end-1
+        bg-dots rounded-3xl md:my-12 relative z-10 overflow-hidden">
+        <img src="./assets/xbox.png" alt="XBOX Controller" class="ease-in duration-100 absolute top-[250px] -right-[150px] md:top-[60px] md:-right-[90px] opacity-10 w-[550px]">
+        <div class="h-full px-8 pt-36 pb-10 md:px-0 md:py-12 md:pl-40 flex flex-col gap-5 justify-between z-index relative z-20 w-full text-white">
           <div>
-            <h1 class="text-[45px] font-extrabold">XBOX Controller</h1>
+            <h1 class="text-[38px] md:text-[45px] font-extrabold">XBOX Controller</h1>
             <h2 class="text-[30px] tracking-wider">$1,200.99</h2>
           </div>
           <div>
@@ -88,10 +84,10 @@
             </div>
           </div>
           <div class="flex items-center gap-5">
-            <a href="https://carlosc.dev" target="_blank" class="text-sm w-[150px] bg-[#188018] text-center py-3 rounded-full tracking-wider">
+            <a href="https://carlosc.dev" target="_blank" class="shadow-lg text-xs md:text-sm w-[120px] md:w-[150px] bg-[#188018] text-center py-3 rounded-full tracking-wider">
               ADD TO CART
             </a>
-            <a href="https://me.carlosc.dev" target="_blank" class="text-xs opacity-50 flex items-center gap-1 tracking-widest">
+            <a href="https://me.carlosc.dev" target="_blank" class="text-xs opacity-50 flex items-center gap-1 md:tracking-widest">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="17px" height="17px">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
               </svg>
@@ -100,7 +96,7 @@
           </div>
         </div>
       </div>
-      <div class="col-start-1 col-end-4 row-start-1 row-end-1 relative z-20 -translate-x-24">
+      <div class="row-start-1 row-end-4 col-start-1 col-end-2 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 relative z-20 -translate-y-20 md:translate-y-0  md:-translate-x-24">
         <div id="scene" class="absolute inset-0 z-20"></div>
       </div>
     </section>
