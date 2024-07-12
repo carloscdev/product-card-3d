@@ -47,6 +47,12 @@ const loadModel = () => {
     scene.add(model);
   });
 };
+// resize canvas on resize window
+window.addEventListener('resize', () => {
+  renderer.setSize(container.clientWidth, container.clientHeight);
+  camera.aspect = container.clientWidth / container.clientHeight;
+  camera.updateProjectionMatrix();
+});
 
 function animate() {
   if (renderer) {
