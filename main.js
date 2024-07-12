@@ -42,9 +42,9 @@ const loadModel = () => {
     model.position.sub(center); // Mover el modelo al origen
 
     // Crear un grupo y añadir el modelo
-    // const group = new THREE.Group();
-    // group.add(model);
-    scene.add(model);
+    const group = new THREE.Group();
+    group.add(model);
+    scene.add(group);
   });
 };
 // resize canvas on resize window
@@ -65,5 +65,6 @@ function animate() {
 
 loadModel();
 animate();
+
 
 
