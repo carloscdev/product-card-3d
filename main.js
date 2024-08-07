@@ -57,7 +57,7 @@ window.addEventListener('resize', () => {
 function animate() {
   if (renderer) {
     // rotate y
-    scene.rotation.y += 0.003;
+    scene.rotation.y += 0.001;
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
   }
